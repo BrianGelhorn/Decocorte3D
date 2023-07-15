@@ -1,18 +1,24 @@
-.imageList{
-    display: flex;
+.image{
+    object-fit: cover;
+    width: 100vw;
+    height: 40vh;
+    display: inline-block;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.imageContainer{
+    justify-content: center;
+    text-align: center; 
     position: relative;
-    list-style: none;
-    overflow-x: hidden;
+    margin-top: 16px;
 }
 
-.images{
-    margin: 0px;
-}
-
-.images > img{
-    height: 80vh;
-    min-width: 80vh;
-    max-width: 80vh;
-    aspect-ratio: 1;
-    object-fit: cover;  
+.buttonSliders{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }

@@ -1,26 +1,33 @@
-import React, { useRef, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion";
-import Images from '../../media'
-import './imageslider.css'
-import { useInView } from "react-intersection-observer";
+import React, { useState } from "react";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import Images from "../../media";
+import "./imageslider.css";
+import { IconButton } from "@mui/material";
+import {motion} from 'framer-motion';
 
-const ImageSlider = () =>{
-    return(
-        <div>
-            <ul className="imageList">
-                {Images.map((item, index) =>(
-                    <li
-                    className={`images`}>
-                    <motion.img src={item} 
-                    initial={{x: '100vw'}}
-                    animate={{x: '-80vh'}} 
-                    transition={{duration: 2, repeat: Infinity, ease: "linear"}}>
-                    </motion.img>
-                    </li>
-                ))}
-            </ul>
+const ImageSlider = () => {
+  const [curImage, setCurImage] = useState(Images[0]);
+  const buttonSxR = { marginLeft: 'auto', position: "relative"};
+  const buttonSxL = { marginRight: 'auto', position: "relative"};
+  return (
+    <div className="imageContainer">
+        <div className="buttonSliders">
+        <IconButton
+        sx={buttonSxL}
+        children={<ArrowBackIosNewIcon></ArrowBackIosNewIcon>}
+      ></IconButton>
+      <IconButton
+        sx={buttonSxR}
+        children={<ArrowForwardIosIcon></ArrowForwardIosIcon>}
+      ></IconButton>
         </div>
-    )
-}
+      <motion.img
+        className={`image`}
+        src={curImage}
+      ></motion.img>
+    </div>
+  );
+};
 
 export default ImageSlider;
