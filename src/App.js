@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/navbar/navbar.js';
+import NavBar from './components/navbar/navbar';
 import ImageSlider from './components/imageslider/imageslider';
 
 
@@ -9,6 +8,12 @@ function App() {
     <div className="App">
         <NavBar></NavBar>
         <ImageSlider></ImageSlider>
+        <ImageSlider></ImageSlider>
+        <ImageSlider></ImageSlider>
+        <ImageSlider></ImageSlider>
+        <ImageSlider></ImageSlider>
+        <ImageSlider></ImageSlider>
+        
     </div>
   );
 }

@@ -6,17 +6,16 @@
 .bar{
     background-color: hsl(210, 29%, 24%);
     padding: 20px;
+    display: flex;
+    z-index: 2;
+    position: sticky;
+    top: 0;
 }
 
 .title{
-    text-align: center;
     color: white;
-    display: inline-block;
-    flex-shrink: 0;
-}
-
-.menuButton{
-    float: right;
-    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    align-self: flex-start;
 }
 
