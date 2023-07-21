@@ -1,14 +1,13 @@
-import React from 'react'
-import './navbar.css'
-import MenuSlider from './MenuSlider/menuslider';
+import React from "react";
+import {Menu, StyledNav, NavLogo} from './navbarstyles';
 
-const NavBar = () =>{
-    return(
-        <nav className='bar'>
-            <h2 className='title'>Decocorte 3D</h2>
-            <MenuSlider></MenuSlider>
-        </nav>
-    )
-}
+const NavBar = () => {
+  return (
+    <StyledNav>
+      <NavLogo>Decocorte 3D</NavLogo>
+      <Menu></Menu>
+    </StyledNav>
+  );
+};
 
 export default NavBar;
