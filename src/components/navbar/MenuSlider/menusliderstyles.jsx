@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { IconButton, List, ListItem } from "@mui/material";
 
-//Here I create all the components already styled.
 export const Menu = styled(List)`
   height: 100vh;
   position: absolute;

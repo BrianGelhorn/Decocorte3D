@@ -2,7 +2,7 @@ import "./imageslider.css";
 import React, { useState } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import Images from "../../media";
+import Images from "../../../media";
 import { IconButton } from "@mui/material";
 import { AnimatePresence, motion } from "framer-motion";
 

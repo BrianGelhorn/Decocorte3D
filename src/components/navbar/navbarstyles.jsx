@@ -15,6 +15,7 @@ export const StyledNav = styled.nav`
   top: 0;
 `;
 
+//TODO: Change the h2 for a svg or image of the logo
 export const NavLogo = styled.h2`
   color: white;
   flex-grow: 1;

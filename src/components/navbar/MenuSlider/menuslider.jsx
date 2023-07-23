@@ -9,6 +9,7 @@ const variants = {
 };
 
 const MenuSlider = () => {
+  //Boolean setter for check when the menu has to be open or not. With this statement we trigger the animation
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
