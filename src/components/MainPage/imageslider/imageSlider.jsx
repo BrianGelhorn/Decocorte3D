@@ -6,6 +6,7 @@ import Images from "../../../media";
 import { IconButton } from "@mui/material";
 import { AnimatePresence, motion } from "framer-motion";
 
+//TODO: Implement StyledComponents to replace traditional Css styling.
 const ImageSlider = () => {
   const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
@@ -32,7 +33,7 @@ const ImageSlider = () => {
         setCurImage(Images[0]);
       }
     }
-    await delay(400);
+    await delay(300);
     setCanChange(true);
   };
   return (
@@ -55,7 +56,7 @@ const ImageSlider = () => {
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           exit={{ opacity: 0, position: 'absolute'}}
-          transition={{ duration: 0.4}}
+          transition={{ duration: 0.3}}
           className={"image"}
           src={curImage}
         >

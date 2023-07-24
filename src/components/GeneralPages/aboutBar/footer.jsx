@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledFooter, SubTitle, Column, Info } from "./footerstyles";
 
+//TODO: Finish implementing the footer.
 const Footer = () => {
   return (
     <StyledFooter>

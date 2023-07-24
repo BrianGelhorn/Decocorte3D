@@ -19,6 +19,7 @@ export const StyledNav = styled.nav`
 export const NavLogo = styled.h2`
   color: white;
   flex-grow: 1;
+  font-weight: 500;
   text-align: left;
   margin: auto 0 auto 16px;
   align-self: flex-start;
